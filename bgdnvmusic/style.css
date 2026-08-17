@@ -24,6 +24,9 @@ html {
 header {
 	width: 100%;
 	height: 50px;
+	position: relative;
+	z-index: 100;
+	background-color: white;
 }
 header::after {
 	content: '';
@@ -162,12 +165,33 @@ header .phone_menu #menuToggle #menu {
 #menuToggle input:checked ~ ul {
 	transform: none;
 }
+
+section[id="1"] {
+    position: relative;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+}
+
 #ani_gif {
-	width: 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
     height: 100%;
+
     object-fit: cover;
     filter: brightness(55%);
+
+    z-index: 0;
 }
+
+section[id="1"] h1,
+section[id="1"] #arrow {
+    position: relative;
+    z-index: 2;
+}
+
 h1 {
 	position: absolute;
 	color: white;
