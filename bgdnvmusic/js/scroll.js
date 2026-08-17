@@ -1,28 +1,43 @@
-$('a[href*="#"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { 
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); 
-            $target.focus(); 
-          };
-        });
-      }
+document.addEventListener("DOMContentLoaded", () => {
+
+    const title = document.querySelector('section[id="1"] h1');
+
+    if (!title) return;
+
+    const finalText = "BGDNV";
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&@!?";
+
+    const scrambleDuration = 3000;
+    const holdDuration = 5000;
+    const speed = 50;
+
+    function startScramble() {
+
+        const startTime = Date.now();
+
+        const interval = setInterval(() => {
+
+            let randomText = "";
+
+            for (let i = 0; i < finalText.length; i++) {
+                randomText += chars[
+                    Math.floor(Math.random() * chars.length)
+                ];
+            }
+
+            title.textContent = randomText;
+
+            if (Date.now() - startTime >= scrambleDuration) {
+
+                clearInterval(interval);
+
+                title.textContent = finalText;
+
+                setTimeout(startScramble, holdDuration);
+            }
+
+        }, speed);
     }
-  });
+
+    startScramble();
+});
