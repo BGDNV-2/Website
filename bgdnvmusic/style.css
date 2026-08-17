@@ -163,8 +163,10 @@ header .phone_menu #menuToggle #menu {
 	transform: none;
 }
 #ani_gif {
-	padding-top: 20px;
-	max-width: 3840px;
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(55%);
 }
 h1 {
 	position: absolute;
@@ -892,4 +894,5 @@ footer #arrow_up {
 	width: 0;
 	height: 0;
 	} 
-}
+}
+
