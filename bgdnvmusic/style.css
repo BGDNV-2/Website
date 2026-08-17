@@ -1271,4 +1271,101 @@ footer #logo_w {
     .coming-soon-socials img {
         width: 28px;
     }
+
+    @media screen and (max-width: 844px) {
+
+    /* LOGO GRÖSSER */
+
+    #logo_b {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+
+        top: -70px;
+        right: -55px;
+        left: auto;
+
+        object-fit: contain;
+    }
+
+
+    /* BGDNV / SCRAMBLE KLEINER */
+
+    section[id="1"] h1 {
+        font-size: clamp(70px, 18vw, 95px);
+
+        width: 95%;
+        text-align: center;
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        white-space: nowrap;
+    }
+}
+
+
+/* FOOTER SOCIALS MOBILE */
+
+footer .socials_icons > a:not(:last-child) {
+    position: absolute;
+    top: 34%;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-50%, -50%);
+}
+
+footer .socials_icons > a:nth-of-type(1) { left: 12%; }
+footer .socials_icons > a:nth-of-type(2) { left: 27%; }
+footer .socials_icons > a:nth-of-type(3) { left: 42%; }
+footer .socials_icons > a:nth-of-type(4) { left: 58%; }
+footer .socials_icons > a:nth-of-type(5) { left: 73%; }
+footer .socials_icons > a:nth-of-type(6) { left: 88%; }
+
+#spotify,
+#apple,
+#youtube,
+#instagram,
+#facebook,
+#twitter {
+    position: static;
+
+    top: auto;
+    left: auto;
+
+    width: auto;
+    height: auto;
+
+    font-size: 28px;
+    transform: none;
+}
+
+footer .socials_icons > a:not(:last-child) {
+    top: 47%;
+}
+
+footer h2 {
+    top: 18%;
+}
+
+footer .socials_icons > a:not(:last-child) {
+    top: 18%;
+}
+
+footer h2 {
+    top: 27%;
+}
+
+#arrow_s2,
+#arrow_s3,
+#arrow_s4 {
+    display: none;
+}
+
 }
