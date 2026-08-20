@@ -1,12 +1,16 @@
-const title = document.querySelector("h1");
+const titles = document.querySelectorAll("h1");
 
-const finalText = "BGDNV";
+const finalTexts = {
+    bgdnv: "BGDNV",
+    contact: "CONTACT"
+};
+
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&@";
 const scrambleDuration = 2000;
 const holdDuration = 5000;
 const frameTime = 50;
 
-function scrambleText() {
+function scrambleText(title, finalText) {
     const startTime = Date.now();
 
     const interval = setInterval(() => {
@@ -31,9 +35,17 @@ function scrambleText() {
             clearInterval(interval);
             title.textContent = finalText;
 
-            setTimeout(scrambleText, holdDuration);
+            setTimeout(() => {
+                scrambleText(title, finalText);
+            }, holdDuration);
         }
     }, frameTime);
 }
 
-scrambleText();
+titles.forEach(title => {
+    const finalText = finalTexts[title.id];
+
+    if (finalText) {
+        scrambleText(title, finalText);
+    }
+});

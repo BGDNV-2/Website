@@ -4,11 +4,11 @@
 }
 @font-face {
 	font-family: secondary;
-	src: url(assets/fonts/OpenSans-SemiBold.ttf);
+	src: url(assets/fonts/bahnschrift.ttf);
 }
 @font-face {
 	font-family: primary;
-	src: url(assets/fonts/Quicksand-Regular.ttf);
+	src: url(assets/fonts/BioSans-Light.ttf);
 }
 @font-face {
 	font-family: subtitle;
@@ -259,7 +259,7 @@ section #arrow {
 }
 .section_2 h2 {
 	color: white;
-	font-family: secondary;
+	font-family: primary;
 	font-size: 4em;
 	position: absolute;
 	top: 9%;
@@ -1347,7 +1347,6 @@ footer #logo_w {
     }
 }
 
-
 /* FOOTER SOCIALS MOBILE */
 
 footer .socials_icons > a:not(:last-child) {
@@ -1455,9 +1454,8 @@ footer h2 {
     transform: none;
 
     margin: 0 0 35px 0;
-
+    font-family: secondary;
     font-size: clamp(4rem, 7vw, 7rem);
-    font-weight: 400;
     line-height: 1;
 }
 
