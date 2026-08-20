@@ -39,6 +39,13 @@ header.scrolled {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+header.scrolled nav a:hover {
+    color: white;
+}
+
+header.scrolled nav a:hover::before {
+    background-color: white;
+}
 
 header::after {
 	content: '';
