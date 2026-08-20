@@ -1512,3 +1512,44 @@ footer h2 {
 .contact .coming-soon-copyright {
     margin-top: 55px;
 }
+
+.contact {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 38vh;
+    padding-bottom: 120px;
+
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.contact h1 {
+    position: static;
+    transform: none;
+
+    margin: 0 0 100px 0;
+
+    font-family: secondary;
+    font-size: clamp(4rem, 7vw, 7rem);
+    line-height: 1;
+}
+
+.contact > p:not(.coming-soon-copyright) {
+    position: static;
+    transform: none;
+
+    font-family: primary;
+
+    max-width: 1000px;
+    margin: 0 20px 70px;
+
+    font-size: 24px;
+    line-height: 1.5;
+}

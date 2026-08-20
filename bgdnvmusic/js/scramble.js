@@ -2,7 +2,8 @@ const titles = document.querySelectorAll("h1");
 
 const finalTexts = {
     bgdnv: "BGDNV",
-    contact: "CONTACT"
+    contact: "CONTACT",
+    about: "ABOUT ME",
 };
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&@";
