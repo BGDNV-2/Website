@@ -42,17 +42,24 @@
             ]
         }
         </script>
+        <link rel="preload" as="image" href="assets/graphics/start_video_poster.webp" fetchpriority="high">
+        <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
         <link rel="canonical" href="https://bgdnv.com/">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" type="image/svg" href="/assets/graphics/icons/favicon.svg" sizes="32x32">
         <link rel="icon" type="image/svg" href="/assets/graphics/icons/favicon.svg" sizes="96x96">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/graphics/icons/apple-touch-icon.svg">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <script src="https://kit.fontawesome.com/37cab09d74.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
-        <script src="js/scroll.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        </noscript>
+        <script src="https://kit.fontawesome.com/37cab09d74.js" crossorigin="anonymous" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="js/scroll.js" crossorigin="anonymous" defer></script>
         <script src="js/scramble.js" defer></script>
         <script src="js/instagram.js" defer></script>
         <title>BGDNV MUSIC</title>
@@ -80,11 +87,11 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                      <a href="/comingSoon.html"><li>Music</li></a>
-                      <a href="/comingSoon.html"><li>Videos</li></a>
-                      <a href="/about.html"><li>About</li></a>
-                      <a href="/comingSoon.html"><li>BeatCity Radio</li></a>
-                      <a href="/contact.html"><li>Contact</li></a>
+                      <li><a href="/comingSoon.html">Music</a></li>
+                      <li><a href="/comingSoon.html">Videos</a></li>
+                      <li><a href="/about.html">About</a></li>
+                      <li><a href="/comingSoon.html">BeatCity Radio</a></li>
+                      <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
 			</div>
@@ -92,9 +99,9 @@
 
         <main>
             <section id="1">
-                <video src="assets/videos/start_video_720p.mp4" playsinline muted loop autoplay preload="auto" id="ani_gif"></video>
+                <video src="assets/videos/start_video_720p.mp4" playsinline muted loop autoplay preload="metadata" id="ani_gif" poster="assets/graphics/start_video_poster.webp"></video>
                 <h1 id="bgdnv">BGDNV</h1>
-                <a href="#2"><img src="assets/graphics/icons/arrow_down.png" alt="arrow down" id="arrow"></a>
+                <a href="#2" aria-label="Scroll Down" alt="Scroll Down"><img src="assets/graphics/icons/arrow_down.png" alt="arrow down" id="arrow"></a>
             </section>
 
             <section class="section_2" id="2">
@@ -106,7 +113,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/crazy-game-feat-johnny-b" target="_blank">
-                                <img src="assets/photos/crazy_game.webp" alt="Crazy Game">
+                                <img src="assets/photos/crazy_game.webp" alt="Crazy Game" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -114,7 +121,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/dont-leave" target="_blank">
-                                <img src="assets/photos/dont_leave.webp" alt="Don't Leave">
+                                <img src="assets/photos/dont_leave.webp" alt="Don't Leave" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -122,7 +129,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/falling-down-feat-zentone-6" target="_blank">
-                                <img src="assets/photos/falling_down.webp" alt="Falling Down">
+                                <img src="assets/photos/falling_down.webp" alt="Falling Down" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -130,7 +137,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/holding-on" target="_blank">
-                                <img src="assets/photos/holding_on.webp" alt="Holding On">
+                                <img src="assets/photos/holding_on.webp" alt="Holding On" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -138,7 +145,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/let-go" target="_blank">
-                                <img src="assets/photos/let_go.webp" alt="Let Go">
+                                <img src="assets/photos/let_go.webp" alt="Let Go" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -146,7 +153,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/lichter-aus-feat-mika-klz-3" target="_blank">
-                                <img src="assets/photos/lichter_aus.webp" alt="Lichter Aus">
+                                <img src="assets/photos/lichter_aus.webp" alt="Lichter Aus" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -154,7 +161,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/losin" target="_blank">
-                                <img src="assets/photos/losin.webp" alt="Losin">
+                                <img src="assets/photos/losin.webp" alt="Losin" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -162,7 +169,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/mission-mars" target="_blank">
-                                <img src="assets/photos/mission_mars.webp" alt="Mission Mars">
+                                <img src="assets/photos/mission_mars.webp" alt="Mission Mars" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -170,7 +177,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/morning-lights" target="_blank">
-                                <img src="assets/photos/morning_lights.webp" alt="Morning Lights">
+                                <img src="assets/photos/morning_lights.webp" alt="Morning Lights" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -178,7 +185,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/morning-lights-acoustic" target="_blank">
-                                <img src="assets/photos/morning_lights_acoustic.webp" alt="Morning Lights Acoustic">
+                                <img src="assets/photos/morning_lights_acoustic.webp" alt="Morning Lights Acoustic" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -186,7 +193,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/not-your-type-feat-beybo--dom-yeetfield" target="_blank">
-                                <img src="assets/photos/not_your_type.webp" alt="Not Your Type">
+                                <img src="assets/photos/not_your_type.webp" alt="Not Your Type" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -194,7 +201,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/nothing-to-lose" target="_blank">
-                                <img src="assets/photos/nothing_to_lose.webp" alt="Nothing To Lose">
+                                <img src="assets/photos/nothing_to_lose.webp" alt="Nothing To Lose" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -202,7 +209,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/stars" target="_blank">
-                                <img src="assets/photos/stars.webp" alt="Stars">
+                                <img src="assets/photos/stars.webp" alt="Stars" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -210,7 +217,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/stuck-on-you" target="_blank">
-                                <img src="assets/photos/stuck_on_you.webp" alt="Stuck On You">
+                                <img src="assets/photos/stuck_on_you.webp" alt="Stuck On You" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -218,7 +225,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/stuck-on-you-2" target="_blank">
-                                <img src="assets/photos/stuck_on_you_remix.webp" alt="Stuck On You Remix">
+                                <img src="assets/photos/stuck_on_you_remix.webp" alt="Stuck On You Remix" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -227,7 +234,7 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/the-lick-nirvana-3" target="_blank">
-                                <img src="assets/photos/the_lick.webp" alt="The Lick">
+                                <img src="assets/photos/the_lick.webp" alt="The Lick" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -235,35 +242,46 @@
                     <div class="card">
                         <div class="img">
                             <a href="https://distrokid.com/hyperfollow/bgdnv/waves-feat-dom-yeetfield-instrumental" target="_blank">
-                                <img src="assets/photos/waves.webp" alt="Waves">
+                                <img src="assets/photos/waves.webp" alt="Waves" width="800px" height="800px" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <script>
-                    $(".slider").owlCarousel({
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const slider = $(".slider");
 
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        700: {
-                            items: 2
-                        },
-                        1100: {
-                            items: 3
-                        }
-                    }});
+                        slider.on("initialized.owl.carousel refreshed.owl.carousel", function () {
+                            $(this).find(".owl-dot").each(function(index) {
+                                $(this).attr("aria-label", "Go to slide " + (index + 1));
+                            });
+                        });
+
+                        slider.owlCarousel({
+                            loop: true,
+                            autoplay: true,
+                            autoplayTimeout: 3000,
+                            autoplayHoverPause: true,
+
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                700: {
+                                    items: 2
+                                },
+                                1100: {
+                                    items: 3
+                                }
+                            }
+                        });
+                    });
                 </script>
 
                 <a href="https://www.youtube.com/playlist?list=OLAK5uy_mzUorCFD_i3goEXbPA7Hm37aRNIDE2OAk" id="button_section_2" target="_blank">More Music</a>
-                <a href="#3">
-                    <img src="assets/graphics/icons/arrow_down.png" alt="Arrow Button" id="arrow_s2">
+                <a href="#3" aria-label="Scroll to Instagram Section" alt="Scroll to Instagram Section">
+                    <img src="assets/graphics/icons/arrow_down.png"  alt="Arrow Button" id="arrow_s2">
                 </a>
             </section>
 
@@ -281,15 +299,15 @@
             </section>
 
             <section class="section_4" id="4">
-                <video src="assets/videos/beatcity_12s_720p.mp4" playsinline muted loop autoplay preload="auto" id="spotify_video"></video>
+                <video src="assets/videos/beatcity_12s_720p.mp4" loading="lazy" playsinline muted loop autoplay preload="metadata" id="spotify_video" poster="assets/graphics/beatcity_poster.webp"></video>
                 <h2>BGDNV's Spotify Playlists</h2>
                 <p>Do you have music I need to feature on my playlists?</p>
                 <a href="mailto:submit@bgdnvmusic.com" id="button_section_4">Submit Music</a>
-                <a href="#5"><img src="assets/graphics/icons/arrow_down.png" alt="arrow down" id="arrow_s4"></a>
-                <iframe id="i1" src="https://open.spotify.com/embed/playlist/4l67Yzj7iGMy1aRgFCHn9S?utm_source=generator&si=7cb52c17199845b7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe id="i2" src="https://open.spotify.com/embed/playlist/0HaNzpWICoSD8NQiHr7Rux" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe id="i3" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4DPmkIm7gkek?utm_source=generator&si=23a31380b99c46c7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe id="i4" src="https://open.spotify.com/embed/playlist/1CH8BaR8J1lyURBLnFvneL?utm_source=generator&theme=0&si=e61cf1ed9f0540ec" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <a href="#5" aria-label="Scroll to Footer" alt="Scroll to Footer"><img src="assets/graphics/icons/arrow_down.png" alt="arrow down" id="arrow_s4"></a>
+                <iframe id="i1" loading="lazy" title="BeatCity Radio Spotify Playlist" src="https://open.spotify.com/embed/playlist/4l67Yzj7iGMy1aRgFCHn9S?utm_source=generator&si=7cb52c17199845b7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe id="i2" loading="lazy" title="BGDNV - Best Of Deep House Spotify Playlist" src="https://open.spotify.com/embed/playlist/0HaNzpWICoSD8NQiHr7Rux" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe id="i3" loading="lazy" title="BGDNV Radio Spotify Playlist" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4DPmkIm7gkek?utm_source=generator&si=23a31380b99c46c7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe id="i4" loading="lazy" title="BGDNV Dark Spotify Playlist" src="https://open.spotify.com/embed/playlist/1CH8BaR8J1lyURBLnFvneL?utm_source=generator&theme=0&si=e61cf1ed9f0540ec" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </section>
 
         </main>
@@ -303,48 +321,48 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
 
-                <video id="footer_video" autoplay muted loop playsinline>
+                <video id="footer_video" autoplay muted loop playsinline preload="metadata" poster="assets/graphics/start_video_poster.webp">
                     <source src="assets/videos/start_video_720p.mp4" type="video/mp4">
                 </video>
 
                 <div class="footer-social-icons">
 
-                    <a href="https://open.spotify.com/artist/7I9R5hGBKKzE64L3eKNOL9" target="_blank">
+                    <a href="https://open.spotify.com/artist/7I9R5hGBKKzE64L3eKNOL9" target="_blank" aria-label="BGDNV on Spotify">
                         <i class="fab fa-spotify"></i>
                     </a>
 
-                    <a href="https://music.apple.com/us/artist/bgdnv/1512120249" target="_blank">
+                    <a href="https://music.apple.com/us/artist/bgdnv/1512120249" target="_blank" aria-label="BGDNV on Apple Music">
                         <i class="fab fa-apple"></i>
                     </a>
 
-                    <a href="https://youtube.com/BGDNV" target="_blank">
+                    <a href="https://youtube.com/BGDNV" target="_blank" aria-label="BGDNV on YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
 
-                    <a href="https://instagram.com/bgdnvmusic" target="_blank">
+                    <a href="https://instagram.com/bgdnvmusic" target="_blank" aria-label="BGDNV on Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
 
-                    <a href="https://www.tiktok.com/@bgdnvmusic" target="_blank">
+                    <a href="https://www.tiktok.com/@bgdnvmusic" target="_blank" aria-label="BGDNV on TikTok">
                         <i class="fab fa-tiktok"></i>
                     </a>
 
-                    <a href="https://facebook.com/bgdnvmusic" target="_blank">
+                    <a href="https://facebook.com/bgdnvmusic" target="_blank" aria-label="BGDNV on Facebook">
                         <i class="fab fa-facebook"></i>
                     </a>
 
-                    <a href="https://twitter.com/bgdnvmusic" target="_blank">
+                    <a href="https://twitter.com/bgdnvmusic" target="_blank" aria-label="BGDNV on Twitter (aka X)">
                         <i class="fab fa-twitter"></i>
                     </a>
 
-                    <a href="https://soundcloud.com/bgdnv" target="_blank">
+                    <a href="https://soundcloud.com/bgdnv" target="_blank" aria-label="BGDNV on SoundCloud">
                         <i class="fab fa-soundcloud"></i>
                     </a>
 
                 </div>
 
                 <p>&copy;2026 BGDNV</p>    
-                <a href="#"><img src="assets/graphics/icons/arrow_down.png" alt="bgdnv logo white" id="arrow_up"></a>
+                <a href="#" aria-label="Scroll to Top"><img src="assets/graphics/icons/arrow_down.png" alt="bgdnv logo white" id="arrow_up"></a>
             </div>
         </footer>
     </body>

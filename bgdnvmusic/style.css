@@ -1,18 +1,22 @@
 @font-face {
 	font-family:third ;
 	src: url(assets/fonts/Poppins-Regular.ttf);
+    font-display: swap;
 }
 @font-face {
 	font-family: secondary;
 	src: url(assets/fonts/bahnschrift.ttf);
+    font-display: swap;
 }
 @font-face {
 	font-family: primary;
 	src: url(assets/fonts/BioSans-Light.ttf);
+    font-display: swap;
 }
 @font-face {
 	font-family: subtitle;
 	src: url(assets/fonts/Montserrat-Regular.ttf);
+    font-display: swap;
 }
 * {
 	margin: 0;
@@ -54,7 +58,7 @@ header::after {
 }
 header img {
 	width: 300px;
-	height: 300px;
+	height: auto;
 	position: absolute;
 	top: -105px;
 	left: -2.864583333333333%;
@@ -336,7 +340,7 @@ section #arrow {
 	margin: 0 4%;
 }
 .section_3 {
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
 	height: 1050px;
     position: relative;
@@ -764,7 +768,7 @@ footer #arrow_up {
 
     header img {
         width: 90px;
-        height: 90px;
+        height: auto;
         top: -5px;
         left: auto;
         right: 10px;
@@ -991,30 +995,29 @@ footer h2 {
 
 /* SOCIAL ICONS */
 
-#spotify,
-#apple,
-#youtube,
-#instagram,
-#tiktok,
-#facebook,
-#twitter {
+.footer-social-icons {
     top: 48%;
-    width: 28px;
+    left: 50%;
+    width: 280px;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 25px;
+
+    justify-items: center;
+    align-items: center;
 }
 
-#spotify   { left: 34%; }
-#apple     { left: 39%; }
-#youtube   { left: 44%; }
-#instagram { left: 49%; }
-#tiktok    { left: 54%; }
-#facebook  { left: 59%; }
-#twitter   { left: 64%; }
+.footer-social-icons a {
+    margin: 0;
+}
 
 
 /* FOOTER LINKS */
 
 footer ul {
-    top: 61%;
+    top: 66%;
     left: 50%;
     width: 90%;
 

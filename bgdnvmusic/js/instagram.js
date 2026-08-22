@@ -13,6 +13,8 @@ async function loadInstagramFeed() {
             const image = document.createElement("img");
             image.src = post.thumbnail_url || post.media_url;
             image.alt = post.caption || "BGDNV Instagram post";
+            image.loading = "lazy";
+            image.decoding = "async";
 
             link.appendChild(image);
             feed.appendChild(link);
