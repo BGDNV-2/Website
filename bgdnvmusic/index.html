@@ -65,6 +65,72 @@
         <title>BGDNV MUSIC</title>
     </head>
 
+    // load the footer video only when it is about to enter the viewport
+    <script>
+        const footerVideo = document.getElementById("footer_video");
+
+        const footerObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    footerVideo.src = footerVideo.dataset.src;
+                    footerVideo.load();
+                    footerVideo.play().catch(() => {});
+
+                    observer.unobserve(footerVideo);
+                }
+            });
+        }, {
+            rootMargin: "500px"
+        });
+
+        footerObserver.observe(footerVideo);
+    </script>
+
+    // load the spotify video only when it is about to enter the viewport
+    <script>
+        const spotifyVideo = document.getElementById("spotify_video");
+
+        const spotifyObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    spotifyVideo.src = spotifyVideo.dataset.src;
+                    spotifyVideo.load();
+                    spotifyVideo.play().catch(() => {});
+
+                    observer.unobserve(spotifyVideo);
+                }
+            });
+        }, {
+            rootMargin: "500px"
+        });
+
+        spotifyObserver.observe(spotifyVideo);
+    </script>
+
+    // load the spotify iframes only when they are about to enter the viewport
+    <script>
+        const spotifySection = document.querySelector(".section_4");
+        const spotifyFrames = document.querySelectorAll(".section_4 iframe[data-src]");
+
+        const spotifyFrameObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+
+                    spotifyFrames.forEach(frame => {
+                        frame.src = frame.dataset.src;
+                        frame.removeAttribute("data-src");
+                    });
+
+                    observer.unobserve(spotifySection);
+                }
+            });
+        }, {
+            rootMargin: "600px"
+        });
+
+        spotifyFrameObserver.observe(spotifySection);
+    </script>
+
     <body>
         <header>
             <a href="#" aria-label="Home"><img src="assets/graphics/logos/bg_logo_b.svg" alt="BGDNV Logo" id="logo_b"></a>
@@ -100,6 +166,8 @@
         <main>
             <section id="1">
                 <video src="assets/videos/start_video_720p.mp4" playsinline muted loop autoplay preload="metadata" id="ani_gif" poster="assets/graphics/start_video_poster.webp"></video>
+                    <source src="assets/videos/start_video_poster.webp" media="(min-width: 845px)" type="video/mp4">
+                </video>
                 <h1 id="bgdnv">BGDNV</h1>
                 <a href="#2" aria-label="Scroll Down" alt="Scroll Down"><img src="assets/graphics/icons/arrow_down.png" alt="arrow down" id="arrow"></a>
             </section>
@@ -301,15 +369,15 @@
             </section>
 
             <section class="section_4" id="4">
-                <video src="assets/videos/beatcity_12s_720p.mp4" loading="lazy" playsinline muted loop autoplay preload="metadata" id="spotify_video" poster="assets/graphics/beatcity_poster.webp"></video>
+                <video src="assets/videos/beatcity_12s_720p.mp4" loading="lazy" playsinline muted loop preload="none" id="spotify_video" poster="assets/graphics/beatcity_poster.webp"></video>
                 <h2>BGDNV's Spotify Playlists</h2>
                 <p>Do you have music I need to feature on my playlists?</p>
                 <a href="mailto:submit@bgdnvmusic.com" id="button_section_4">Submit Music</a>
                 <a href="#5" aria-label="Scroll to Footer" alt="Scroll to Footer"><img src="assets/graphics/icons/arrow_down.png" alt="arrow down" id="arrow_s4"></a>
-                <iframe id="i1" loading="lazy" title="BeatCity Radio Spotify Playlist" src="https://open.spotify.com/embed/playlist/4l67Yzj7iGMy1aRgFCHn9S?utm_source=generator&si=7cb52c17199845b7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe id="i2" loading="lazy" title="BGDNV - Best Of Deep House Spotify Playlist" src="https://open.spotify.com/embed/playlist/0HaNzpWICoSD8NQiHr7Rux" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe id="i3" loading="lazy" title="BGDNV Radio Spotify Playlist" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4DPmkIm7gkek?utm_source=generator&si=23a31380b99c46c7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe id="i4" loading="lazy" title="BGDNV Dark Spotify Playlist" src="https://open.spotify.com/embed/playlist/1CH8BaR8J1lyURBLnFvneL?utm_source=generator&theme=0&si=e61cf1ed9f0540ec" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe id="i1" loading="lazy" title="BeatCity Radio Spotify Playlist" data-src="https://open.spotify.com/embed/playlist/4l67Yzj7iGMy1aRgFCHn9S?utm_source=generator&si=7cb52c17199845b7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe id="i2" loading="lazy" title="BGDNV - Best Of Deep House Spotify Playlist" data-src="https://open.spotify.com/embed/playlist/0HaNzpWICoSD8NQiHr7Rux" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe id="i3" loading="lazy" title="BGDNV Radio Spotify Playlist" data-src="https://open.spotify.com/embed/playlist/37i9dQZF1E4DPmkIm7gkek?utm_source=generator&si=23a31380b99c46c7" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe id="i4" loading="lazy" title="BGDNV Dark Spotify Playlist" data-src="https://open.spotify.com/embed/playlist/1CH8BaR8J1lyURBLnFvneL?utm_source=generator&theme=0&si=e61cf1ed9f0540ec" width="20%" height="500" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </section>
 
         </main>
@@ -323,7 +391,7 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
 
-                <video id="footer_video" autoplay muted loop playsinline preload="metadata" poster="assets/graphics/start_video_poster.webp">
+                <video id="footer_video" muted loop playsinline preload="none" poster="assets/graphics/start_video_poster.webp">
                     <source src="assets/videos/start_video_720p.mp4" type="video/mp4">
                 </video>
 
