@@ -15,6 +15,8 @@ async function loadInstagramFeed() {
             image.alt = post.caption || "BGDNV Instagram post";
             image.loading = "lazy";
             image.decoding = "async";
+            image.width = 600;
+            image.height = 600;
 
             link.appendChild(image);
             feed.appendChild(link);

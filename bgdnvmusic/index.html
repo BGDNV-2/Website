@@ -53,11 +53,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/graphics/icons/apple-touch-icon.svg">
         <link rel="stylesheet" href="style.css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <noscript>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         </noscript>
-        <script src="https://kit.fontawesome.com/37cab09d74.js" crossorigin="anonymous" defer></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
         <script src="js/scroll.js" crossorigin="anonymous" defer></script>
         <script src="js/scramble.js" defer></script>
@@ -67,7 +67,7 @@
 
     <body>
         <header>
-            <a href="#"><img src="assets/graphics/logos/bg_logo_b.svg" alt="BGDNV Logo" id="logo_b"></a>
+            <a href="#" aria-label="Home"><img src="assets/graphics/logos/bg_logo_b.svg" alt="BGDNV Logo" id="logo_b"></a>
             <div class="nav" id="0">
                 <nav>
                     <ul>
@@ -82,7 +82,7 @@
 
             <div class="phone_menu">
                 <div id="menuToggle">
-                    <input type="checkbox" />
+                    <input type="checkbox" aria-label="Toggle navigation" />
                     <span></span>
                     <span></span>
                     <span></span>
@@ -263,6 +263,8 @@
                             autoplay: true,
                             autoplayTimeout: 3000,
                             autoplayHoverPause: true,
+                            nav: false,
+                            dots: false,
 
                             responsive: {
                                 0: {

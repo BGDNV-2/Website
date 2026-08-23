@@ -60,7 +60,7 @@ header img {
 	width: 300px;
 	height: auto;
 	position: absolute;
-	top: -105px;
+	top: -38px;
 	left: -2.864583333333333%;
 	float: left;
 }
@@ -752,6 +752,24 @@ footer #arrow_up {
                                         h3 {
 	font-size: 1.75em;
 	}
+
+     .contact-socials {
+        width: 280px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 20px 25px;
+
+        justify-items: center;
+        align-items: center;
+
+        margin-top: 70px;
+    }
+
+    .contact-socials a {
+        margin: 0;
+    }
 }
 @media screen and (min-width:845px) {
                                         #menuToggle, #menu{
@@ -1587,4 +1605,20 @@ footer h2 {
 
     font-size: 24px;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 844px) {
+    .contact .contact-socials {
+        width: 280px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px 25px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .contact .contact-socials a {
+        margin: 0;
+    }
 }
