@@ -4,6 +4,7 @@ const finalTexts = {
     bgdnv: "BGDNV",
     contact: "CONTACT",
     about: "ABOUT ME",
+    music: "MUSIC"
 };
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&@";

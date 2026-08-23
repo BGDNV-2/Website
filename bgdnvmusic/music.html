@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Official website of BGDNV - DJ and music producer. Discover releases, Spotify playlists, Instagram content and more.">
+        <meta name="robots" content="index, follow, max-image-preview:large">
+        <meta property="og:site_name" content="BGDNV">
+        <meta property="og:title" content="BGDNV MUSIC">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://bgdnv.com/">
+        <meta property="og:image" content="https://bgdnv.com/assets/graphics/social_preview.webp">
+        <meta property="og:image:alt" content="BGDNV - DJ and Music Producer">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="BGDNV MUSIC">
+        <meta name="twitter:description" content="Official website of BGDNV - DJ and music producer.">
+        <meta name="twitter:image" content="https://bgdnv.com/assets/graphics/social_preview.webp">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "BGDNV",
+            "alternateName": ["BGNV", "bgdnv", "bgdnvmusic", "bgdnv music", "bgdnv.com"],
+            "url": "https://bgdnv.com/"
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "BGDNV",
+            "url": "https://bgdnv.com/",
+            "sameAs": [
+                "https://open.spotify.com/artist/7I9R5hGBKKzE64L3eKNOL9",
+                "https://music.apple.com/us/artist/bgdnv/1512120249",
+                "https://youtube.com/BGDNV",
+                "https://instagram.com/bgdnvmusic",
+                "https://facebook.com/bgdnvmusic",
+                "https://twitter.com/bgdnvmusic"
+            ]
+        }
+        </script>
+        <link rel="preload" as="image" href="assets/graphics/start_video_poster.webp" fetchpriority="high">
+        <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+        <link rel="canonical" href="https://bgdnv.com/">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/svg" href="/assets/graphics/icons/favicon.svg" sizes="32x32">
+        <link rel="icon" type="image/svg" href="/assets/graphics/icons/favicon.svg" sizes="96x96">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/graphics/icons/apple-touch-icon.svg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        </noscript>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="js/scroll.js" crossorigin="anonymous" defer></script>
+        <script src="js/scramble.js" defer></script>
+        <script src="js/instagram.js" defer></script>
+        <title>BGDNV MUSIC - Releases</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="/index.html" aria-label="Home"><img src="assets/graphics/logos/bg_logo_b.svg" alt="BGDNV Logo" id="logo_b"></a>
+            <div class="nav" id="0">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/comingSoon.html">Videos</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLeJTfXtmyf0dG6IwXBR2V0yn-d7kwSdy3" target="_blank">BeatCity Radio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="phone_menu">
+                <div id="menuToggle">
+                    <input type="checkbox" aria-label="Toggle navigation" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="/comingSoon.html">Videos</a></li>
+                      <li><a href="/about.html">About</a></li>
+                      <li><a href="https://www.youtube.com/playlist?list=PLeJTfXtmyf0dG6IwXBR2V0yn-d7kwSdy3" target="_blank">BeatCity Radio</a></li>
+                      <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+			</div>
+        </header>
+
+        <main class="music-page">
+        
+            <section class="music-hero">
+                <div class="music-hero-bg">
+                    <div class="music-hero-mosaic" id="musicHeroMosaic"></div>
+                    <div class="music-hero-overlay"></div>
+                </div>
+
+                <h1 id="music">MUSIC</h1>
+            </section>
+
+            <section class="music-releases">
+
+                <div class="releases-grid">
+
+                    <article class="release-card" style="--cover: url('assets/photos/crazy_game.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/crazy-game-feat-johnny-b" target="_blank">
+                            <img src="assets/photos/crazy_game.webp" alt="Crazy Game" width="800" height="800">
+                        </a>
+                        <h2>Crazy Game w/ Johnny B.</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/crazy-game-feat-johnny-b"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/dont_leave.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/dont-leave" target="_blank">
+                            <img src="assets/photos/dont_leave.webp" alt="Don't Leave" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Don't Leave</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/dont-leave"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/falling_down.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/falling-down-feat-zentone-6" target="_blank">
+                            <img src="assets/photos/falling_down.webp" alt="Falling Down" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Falling Down w/ Zentone</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/falling-down-feat-zentone-6"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/holding_on.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/holding-on" target="_blank">
+                            <img src="assets/photos/holding_on.webp" alt="Holding On" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Holding On</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/holding-on"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/let_go.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/let-go" target="_blank">
+                            <img src="assets/photos/let_go.webp" alt="Let Go" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Let Go</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/let-go"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/lichter_aus.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/lichter-aus-feat-mika-klz-3" target="_blank">
+                            <img src="assets/photos/lichter_aus.webp" alt="Lichter Aus" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Lichter Aus w/ Mika KLZ</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/lichter-aus-feat-mika-klz-3"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/losin.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/losin" target="_blank">
+                            <img src="assets/photos/losin.webp" alt="Losin'" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Losin'</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/losin"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/mission_mars.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/mission-mars" target="_blank">
+                            <img src="assets/photos/mission_mars.webp" alt="Mission Mars" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Mission Mars</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/mission-mars"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/morning_lights.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/morning-lights" target="_blank">
+                            <img src="assets/photos/morning_lights.webp" alt="Morning Lights" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Morning Lights</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/morning-lights"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/morning_lights_acoustic.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/morning-lights-acoustic" target="_blank">
+                            <img src="assets/photos/morning_lights_acoustic.webp" alt="Morning Lights Acoustic" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Morning Lights (Acoustic)</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/morning-lights-acoustic"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/not_your_type.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/not-your-type-feat-beybo--dom-yeetfield" target="_blank">
+                            <img src="assets/photos/not_your_type.webp" alt="Not Your Type" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Not Your Type w/ BeyBo & Dom Yeetfield</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/not-your-type-feat-beybo--dom-yeetfield"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/nothing_to_lose.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/nothing-to-lose" target="_blank">
+                            <img src="assets/photos/nothing_to_lose.webp" alt="Nothing To Lose" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Nothing To Lose</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/nothing-to-lose"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/stars.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/stars" target="_blank">
+                            <img src="assets/photos/stars.webp" alt="Stars" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Stars</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/stars"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/stuck_on_you.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/stuck-on-you" target="_blank">
+                            <img src="assets/photos/stuck_on_you.webp" alt="Stuck On You" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Stuck On You</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/stuck-on-you"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/stuck_on_you_remix.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/stuck-on-you-2" target="_blank">
+                            <img src="assets/photos/stuck_on_you_remix.webp" alt="Stuck On You Remix" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Stuck On You (Noise Departure Remix)</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/stuck-on-you-2"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/the_lick.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/the-lick-nirvana-3" target="_blank">
+                            <img src="assets/photos/the_lick.webp" alt="The Lick" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>The Lick (Nirvana)</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/the-lick-nirvana-3"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                    <article class="release-card" style="--cover: url('assets/photos/waves.webp');">
+                        <a href="https://distrokid.com/hyperfollow/bgdnv/waves-feat-dom-yeetfield-instrumental" target="_blank">
+                            <img src="assets/photos/waves.webp" alt="Waves" width="800" height="800" loading="lazy">
+                        </a>
+                        <h2>Waves w/ Dom Yeetfield</h2>
+                        <a class="release-button"
+                        href="https://distrokid.com/hyperfollow/bgdnv/waves-feat-dom-yeetfield-instrumental"
+                        target="_blank">
+                            LISTEN
+                        </a>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <footer id="music-footer">
+            <img src="assets/graphics/logos/bg_logo_w.svg" alt="bgdnv logo white" id="logo_w">
+            <h2>BGDNV</h2>
+            <ul>
+                <li id="first"><a href="mailto:submit@bgdnvmusic.com">Submit Music</a></li>
+                <li><a>BGDNV GROUP</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+
+                <video id="footer_video" muted loop playsinline preload="none" poster="assets/graphics/start_video_poster.webp">
+                    <source src="assets/videos/start_video_720p.mp4" type="video/mp4">
+                </video>
+
+                <div class="footer-social-icons">
+
+                    <a href="https://open.spotify.com/artist/7I9R5hGBKKzE64L3eKNOL9" target="_blank" aria-label="BGDNV on Spotify">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+
+                    <a href="https://music.apple.com/us/artist/bgdnv/1512120249" target="_blank" aria-label="BGDNV on Apple Music">
+                        <i class="fab fa-apple"></i>
+                    </a>
+
+                    <a href="https://youtube.com/BGDNV" target="_blank" aria-label="BGDNV on YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a href="https://instagram.com/bgdnvmusic" target="_blank" aria-label="BGDNV on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@bgdnvmusic" target="_blank" aria-label="BGDNV on TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                    <a href="https://facebook.com/bgdnvmusic" target="_blank" aria-label="BGDNV on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="https://twitter.com/bgdnvmusic" target="_blank" aria-label="BGDNV on Twitter (aka X)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://soundcloud.com/bgdnv" target="_blank" aria-label="BGDNV on SoundCloud">
+                        <i class="fab fa-soundcloud"></i>
+                    </a>
+
+                </div>
+
+                <p>&copy;2026 BGDNV</p>    
+                <a href="#" aria-label="Scroll to Top"><img src="assets/graphics/icons/arrow_down.png" alt="bgdnv logo white" id="arrow_up"></a>
+            </div>
+        </footer>
+
+        </main>
+
+        <script>
+            const musicHeroCovers = [
+                "assets/photos/crazy_game.webp",
+                "assets/photos/dont_leave.webp",
+                "assets/photos/falling_down.webp",
+                "assets/photos/holding_on.webp",
+                "assets/photos/let_go.webp",
+                "assets/photos/lichter_aus.webp",
+                "assets/photos/losin.webp",
+                "assets/photos/mission_mars.webp",
+                "assets/photos/morning_lights.webp",
+                "assets/photos/morning_lights_acoustic.webp",
+                "assets/photos/not_your_type.webp",
+                "assets/photos/nothing_to_lose.webp",
+                "assets/photos/stars.webp",
+                "assets/photos/stuck_on_you.webp",
+                "assets/photos/stuck_on_you_remix.webp",
+                "assets/photos/the_lick.webp",
+                "assets/photos/waves.webp"
+            ];
+
+            const musicHeroBg = document.querySelector(".music-hero-bg");
+
+            let musicHeroIndex = 0;
+
+            function changeMusicHeroCover() {
+                musicHeroBg.style.backgroundImage =
+                    `url("${musicHeroCovers[musicHeroIndex]}")`;
+
+                musicHeroIndex =
+                    (musicHeroIndex + 1) % musicHeroCovers.length;
+            }
+
+            changeMusicHeroCover();
+
+            setInterval(changeMusicHeroCover, 100);
+        </script>
+    </body>
+</html>
