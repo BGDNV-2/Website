@@ -2175,3 +2175,29 @@ footer h2 {
 #music-footer #arrow_up {
     z-index: 1;
 }
+.release-label {
+    grid-column: 2;
+    grid-row: 1 / 4;
+
+    align-self: center;
+    justify-self: center;
+
+    transform: translateY(0px);
+
+    font-family: primary;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+
+    margin: 0;
+}
+.release-card h2 {
+    transform: translateY(-60px);
+}
+
+.release-card .release-button {
+    transform: translateY(60px);
+}
+
+.release-card:nth-child(even) .release-label {
+    grid-column: 1;
+}
