@@ -2201,3 +2201,47 @@ footer h2 {
 .release-card:nth-child(even) .release-label {
     grid-column: 1;
 }
+
+/* =========================
+   CONTACT PAGE - ONE SCREEN
+   ========================= */
+
+.contact-page {
+    height: 100svh;
+    overflow: hidden;
+}
+
+.contact-page .contact {
+    width: 100%;
+    height: calc(100svh - 80px);
+    min-height: 0;
+
+    margin-top: 80px;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.contact-page .contact h1 {
+    margin: 0 0 40px;
+}
+
+.contact-page .contact > p:not(.coming-soon-copyright) {
+    margin: 0 20px 28px;
+    max-width: 1000px;
+}
+
+.contact-page .contact-socials {
+    margin-top: 30px;
+}
+
+.contact-page .contact .coming-soon-copyright {
+    margin-top: 35px;
+}
