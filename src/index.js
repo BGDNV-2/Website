@@ -49,7 +49,11 @@ export default {
                 );
             }
 
-            return Response.json(data);
+            
+            return Response.json({
+                data: data.data
+            });
+
 
         }
 
