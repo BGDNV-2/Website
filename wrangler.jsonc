@@ -7,5 +7,21 @@
     "directory": "./bgdnvmusic",
     "binding": "ASSETS",
     "run_worker_first": ["/api/*"]
+  },
+
+  "kv_namespaces": [
+    {
+      "binding": "INSTAGRAM_KV",
+      "id": "c9aa9443f6aa4d4ea9627dfdb840a237"
+    }
+  ],
+
+  "triggers": {
+    "crons": ["0 3 * * *"]
   }
+
 }
+
+
+  
+ 
